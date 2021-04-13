@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>BMI Calculator</title>
+	<script src="static/scripts/scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="static/styles/styles.css"></link>
+</head>
+
+<body>
+	<div class="form-input">
+		<div class="container">
+			<h1 class="heading">BMI</h1>
+			<div class="form-text">
+				<label>BMI stands for body mass index. While BMI does not measure body fat directly, it corresponds
+					pretty closely to direct measures of body fat. Therefore, BMI can be considered an alternative for
+					direct measures of body fat. BMI is determined by a person's height and weight.
+
+				</label>
+			</div>
+		</div>
+		<div class="container">
+			<h1 class="heading">Know your BMI</h1>
+			<div class="form-group">
+				<label> Weight </label>
+				<input type="number" id="weight" placeholder="Enter your Weight in kg" />
+			</div>
+			<div class="form-group">
+				<label> Height </label>
+				<input type="number" id="height" placeholder="Enter your Height in cm" />
+			</div>
+			<div style="text-align: center;">
+				<p id="result" class="result"></p>
+			</div>
+			<div>
+				<button type="submit" class="btn" onClick={calculate()}>Calculate</button>
+			</div>
+		</div>
+		<div class="container">
+			<h1 class="heading">BMI Reference Value</h1>
+			<div class="form-table">
+				<table class="bmi-table">
+					<thead>
+						<tr>
+							<th>Classification</th>
+							<th>BMI Score</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>UnderWeight</td>
+
+							<td>
+								<18.5 </td>
+						</tr>
+						<tr>
+							<td>Normal</td>
+							<td>18.5 - 24.9</td>
+						</tr>
+						<tr>
+							<td>OverWeight</td>
+							<td>25.0 - 29.0</td>
+						</tr>
+						<tr>
+							<td>Obese</td>
+							<td>30.0 - 40.0</td>
+						</tr>
+						<tr>
+							<td>Extreme Obese</td>
+							<td> >40.0</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
